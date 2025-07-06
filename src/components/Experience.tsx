@@ -7,7 +7,7 @@ const Experience = () => {
     <section id="experience" className="py-20 px-4">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-16">
-          Work <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Experience</span>
+          Work <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Experience</span>
         </h2>
 
         <div className="max-w-4xl mx-auto">
@@ -77,7 +77,7 @@ const Experience = () => {
                   ].map((skill) => (
                     <span 
                       key={skill}
-                      className="px-3 py-2 bg-purple-500/10 border border-purple-500/30 text-purple-300 rounded-lg text-sm font-medium"
+                      className="px-3 py-2 bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 rounded-lg text-sm font-medium"
                     >
                       {skill}
                     </span>

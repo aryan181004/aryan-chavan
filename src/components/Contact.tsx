@@ -7,7 +7,7 @@ const Contact = () => {
     <section id="contact" className="py-20 px-4">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-16">
-          Let's <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Connect</span>
+          Let's <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Connect</span>
         </h2>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
@@ -52,8 +52,8 @@ const Contact = () => {
 
               {/* Location */}
               <div className="flex items-center gap-4 p-4 bg-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-xl">
-                <div className="p-3 bg-purple-500/10 border border-purple-500/30 rounded-lg">
-                  <MapPin className="text-purple-400" size={20} />
+                <div className="p-3 bg-cyan-500/10 border border-cyan-500/30 rounded-lg">
+                  <MapPin className="text-cyan-400" size={20} />
                 </div>
                 <div>
                   <p className="text-white font-medium">Location</p>
@@ -120,7 +120,7 @@ const Contact = () => {
               
               <button 
                 type="submit"
-                className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105"
+                className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105"
               >
                 <Send size={20} />
                 Send Message

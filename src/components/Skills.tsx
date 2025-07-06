@@ -20,7 +20,7 @@ const Skills = () => {
       title: "Frameworks & Libraries",
       icon: Globe,
       skills: ["Node.js", "Express.js", "Flask", "React"],
-      color: "purple"
+      color: "cyan"
     },
     {
       title: "Tools & Technologies",
@@ -34,7 +34,7 @@ const Skills = () => {
     const colors = {
       blue: "from-blue-500/10 to-blue-600/10 border-blue-500/30 text-blue-400",
       green: "from-green-500/10 to-green-600/10 border-green-500/30 text-green-400",
-      purple: "from-purple-500/10 to-purple-600/10 border-purple-500/30 text-purple-400",
+      cyan: "from-cyan-500/10 to-cyan-600/10 border-cyan-500/30 text-cyan-400",
       orange: "from-orange-500/10 to-orange-600/10 border-orange-500/30 text-orange-400"
     };
     return colors[color as keyof typeof colors];
@@ -44,7 +44,7 @@ const Skills = () => {
     <section id="skills" className="py-20 px-4">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-16">
-          Technical <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Skills</span>
+          Technical <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Skills</span>
         </h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">

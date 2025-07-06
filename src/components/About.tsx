@@ -7,7 +7,7 @@ const About = () => {
     <section id="about" className="py-20 px-4">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-16">
-          About <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Me</span>
+          About <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Me</span>
         </h2>
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -28,7 +28,7 @@ const About = () => {
               <span className="px-4 py-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-sm">
                 Problem Solver
               </span>
-              <span className="px-4 py-2 bg-purple-500/10 border border-purple-500/30 text-purple-300 rounded-full text-sm">
+              <span className="px-4 py-2 bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 rounded-full text-sm">
                 Team Player
               </span>
               <span className="px-4 py-2 bg-green-500/10 border border-green-500/30 text-green-300 rounded-full text-sm">
@@ -52,7 +52,7 @@ const About = () => {
                       <p className="text-gray-400 text-sm">PICT, Pune • GPA: 9.57/10.0 • 2026</p>
                     </div>
                     <div>
-                      <p className="text-purple-400 font-medium">Higher Secondary Certificate</p>
+                      <p className="text-cyan-400 font-medium">Higher Secondary Certificate</p>
                       <p className="text-gray-400 text-sm">Global Public School • 87.5% • 2022</p>
                     </div>
                   </div>
