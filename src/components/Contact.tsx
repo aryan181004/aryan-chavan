@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Mail, Phone, MapPin, Github, Linkedin, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -10,12 +10,12 @@ const Contact = () => {
           Let's <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Connect</span>
         </h2>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           {/* Contact Info */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-white mb-6">Get in Touch</h3>
-              <p className="text-gray-300 leading-relaxed text-lg">
+              <h3 className="text-2xl font-bold text-white mb-6 text-center">Get in Touch</h3>
+              <p className="text-gray-300 leading-relaxed text-lg text-center">
                 I'm always interested in discussing new opportunities, exciting projects, 
                 or just having a conversation about technology and innovation. Let's connect!
               </p>
@@ -63,9 +63,9 @@ const Contact = () => {
             </div>
 
             {/* Social Links */}
-            <div>
+            <div className="text-center">
               <h4 className="text-xl font-semibold text-white mb-4">Follow Me</h4>
-              <div className="flex gap-4">
+              <div className="flex gap-4 justify-center">
                 <a 
                   href="https://github.com/aryan181004"
                   target="_blank"
@@ -84,52 +84,6 @@ const Contact = () => {
                 </a>
               </div>
             </div>
-          </div>
-
-          {/* Quick Message Form */}
-          <div className="bg-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-white mb-6">Send a Quick Message</h3>
-            
-            <form className="space-y-6">
-              <div>
-                <label className="block text-sm font-medium text-gray-300 mb-2">Name</label>
-                <input 
-                  type="text" 
-                  className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600/50 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
-                  placeholder="Your name"
-                />
-              </div>
-              
-              <div>
-                <label className="block text-sm font-medium text-gray-300 mb-2">Email</label>
-                <input 
-                  type="email" 
-                  className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600/50 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
-                  placeholder="your.email@example.com"
-                />
-              </div>
-              
-              <div>
-                <label className="block text-sm font-medium text-gray-300 mb-2">Message</label>
-                <textarea 
-                  rows={5}
-                  className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600/50 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 resize-none"
-                  placeholder="Tell me about your project or just say hello!"
-                ></textarea>
-              </div>
-              
-              <button 
-                type="submit"
-                className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105"
-              >
-                <Send size={20} />
-                Send Message
-              </button>
-            </form>
-            
-            <p className="text-center text-gray-400 text-sm mt-4">
-              Or reach out directly via email or phone above
-            </p>
           </div>
         </div>
       </div>
