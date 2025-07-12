@@ -6,29 +6,42 @@ const Projects = () => {
   const projects = [
     {
       title: "Pictofest",
-      description: "A full-stack art competition platform with secure image uploads, role-based authentication, and optimized database queries. Features public voting system with fraud prevention and event-driven email notifications.",
-      technologies: ["React", "Firebase", "PostgreSQL", "Node.js", "Express", "Azure"],
+      description:
+        "A full-stack art competition platform with secure image uploads, role-based authentication, and optimized database queries. Features public voting system with fraud prevention and event-driven email notifications.",
+      technologies: [
+        "React",
+        "Firebase",
+        "PostgreSQL",
+        "Node.js",
+        "Express",
+        "Azure",
+      ],
       period: "Dec 2024 – Jan 2025",
       liveUrl: "https://pictofest.in",
       highlights: [
         "Deployed scalable architecture using Azure cloud services",
         "Implemented NGINX and PM2 for production environment",
         "Built comprehensive fraud prevention system",
-        "Integrated event-driven email notifications"
-      ]
+        "Integrated event-driven email notifications",
+      ],
+      recognition:
+        "Handled high web traffic of 10,000+ users while ensuring a smooth and secure online voting process",
     },
     {
       title: "Foveated Rendering",
-      description: "Optimized CPU performance by dynamically adjusting screen resolution across foveal, near, and far peripheral regions. Implemented real-time gaze and blink detection for hands-free cursor control.",
+      description:
+        "Optimized CPU performance by dynamically adjusting screen resolution across foveal, near, and far peripheral regions. Implemented real-time gaze and blink detection for hands-free cursor control.",
       technologies: ["Python", "OpenCV", "NumPy", "Mediapipe"],
       period: "Oct 2024",
       highlights: [
         "Real-time gaze and blink detection",
         "Hands-free cursor control system",
         "Visual boundary markers for improved UX",
-        "Dynamic resolution adjustment optimization"
-      ]
-    }
+        "Dynamic resolution adjustment optimization",
+      ],
+      recognition:
+        "Secured 5th position in department for poster presentation to industry experts",
+    },
   ];
 
   return (
@@ -106,14 +119,14 @@ const Projects = () => {
                   </div>
 
                   {/* Special Recognition */}
-                  {project.title === "Foveated Rendering" && (
+                  {project.recognition && (
                     <div className="bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-4">
                       <div className="flex items-center gap-2 mb-2">
                         <Award className="text-yellow-400" size={16} />
                         <span className="text-yellow-400 font-medium text-sm">Recognition</span>
                       </div>
                       <p className="text-gray-300 text-sm">
-                        Secured 5th position in department for poster presentation to industry experts
+                        {project.recognition}
                       </p>
                     </div>
                   )}
