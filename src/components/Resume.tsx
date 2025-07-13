@@ -1,76 +1,69 @@
-import React from 'react';
-import { FileText, Download, Eye, ArrowRight } from 'lucide-react';
+import React from "react";
+import { FileText, Download, Eye, ArrowRight } from "lucide-react";
 
 const Resume = () => {
-  const resumeLink = "https://drive.google.com/file/d/1pekyPsSxCb5UhHO8an6hyl957nJ1qJdt/view?usp=sharing";
-  const downloadLink = "https://drive.google.com/uc?export=download&id=1pekyPsSxCb5UhHO8an6hyl957nJ1qJdt";
+  const resumeLink =
+    "https://drive.google.com/file/d/1pekyPsSxCb5UhHO8an6hyl957nJ1qJdt/view?usp=sharing";
+  const downloadLink =
+    "https://drive.google.com/uc?export=download&id=1pekyPsSxCb5UhHO8an6hyl957nJ1qJdt";
 
   return (
     <section id="resume" className="py-20 px-4">
-      <div className="container mx-auto max-w-6xl">
-        <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-16">
-          My <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Resume</span>
+      <div className="container mx-auto max-w-4xl">
+        <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-12">
+          My{" "}
+          <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+            Resume
+          </span>
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-8 items-center">
-          {/* Resume Preview Card */}
-          <div className="bg-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 hover:bg-gray-800/50 transition-all duration-300">
-            <div className="flex items-center gap-4 mb-6">
+        <div className="grid md:grid-cols-2 gap-8">
+          {/* View Online */}
+          <a
+            href={resumeLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-between p-6 bg-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-xl hover:bg-gray-800/50 transition-all duration-300 group"
+          >
+            <div className="flex items-center gap-4">
               <div className="p-3 bg-blue-500/10 border border-blue-500/30 rounded-lg">
-                <FileText className="text-blue-400" size={24} />
+                <Eye className="text-blue-400" size={20} />
               </div>
-              <h3 className="text-2xl font-bold text-white">Resume Preview</h3>
-            </div>
-            
-            <div className="bg-gray-900/50 border border-gray-700/50 rounded-lg aspect-[1/1.41] flex items-center justify-center mb-6">
-              <div className="text-center p-6">
-                <FileText className="mx-auto text-gray-400" size={48} />
-                <p className="text-gray-400 mt-4">Interactive resume preview</p>
+              <div>
+                <h3 className="text-lg font-semibold text-white">
+                  View Online
+                </h3>
+                <p className="text-sm text-gray-400">Open in Google Drive</p>
               </div>
             </div>
-            
-            <p className="text-gray-300 mb-6">
-              View or download my professional resume in PDF format.
-            </p>
-          </div>
+            <ArrowRight
+              className="text-gray-400 group-hover:text-blue-400 transition-all duration-300"
+              size={20}
+            />
+          </a>
 
-          {/* Download Options */}
-          <div className="space-y-4">
-            <a
-              href={resumeLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-between p-6 bg-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-xl hover:bg-gray-800/50 transition-all duration-300 group"
-            >
-              <div className="flex items-center gap-4">
-                <div className="p-3 bg-blue-500/10 border border-blue-500/30 rounded-lg">
-                  <Eye className="text-blue-400" size={20} />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-white">View Online</h3>
-                  <p className="text-sm text-gray-400">Open in Google Drive</p>
-                </div>
+          {/* Download PDF */}
+          <a
+            href={downloadLink}
+            download
+            className="flex items-center justify-between p-6 bg-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-xl hover:bg-gray-800/50 transition-all duration-300 group"
+          >
+            <div className="flex items-center gap-4">
+              <div className="p-3 bg-green-500/10 border border-green-500/30 rounded-lg">
+                <Download className="text-green-400" size={20} />
               </div>
-              <ArrowRight className="text-gray-400 group-hover:text-blue-400 transition-all duration-300" size={20} />
-            </a>
-            
-            <a
-              href={downloadLink}
-              download
-              className="flex items-center justify-between p-6 bg-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-xl hover:bg-gray-800/50 transition-all duration-300 group"
-            >
-              <div className="flex items-center gap-4">
-                <div className="p-3 bg-green-500/10 border border-green-500/30 rounded-lg">
-                  <Download className="text-green-400" size={20} />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-white">Download PDF</h3>
-                  <p className="text-sm text-gray-400">Save to your device</p>
-                </div>
+              <div>
+                <h3 className="text-lg font-semibold text-white">
+                  Download PDF
+                </h3>
+                <p className="text-sm text-gray-400">Save to your device</p>
               </div>
-              <ArrowRight className="text-gray-400 group-hover:text-green-400 transition-all duration-300" size={20} />
-            </a>
-          </div>
+            </div>
+            <ArrowRight
+              className="text-gray-400 group-hover:text-green-400 transition-all duration-300"
+              size={20}
+            />
+          </a>
         </div>
       </div>
     </section>
