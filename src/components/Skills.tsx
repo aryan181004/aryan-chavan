@@ -82,7 +82,7 @@ const Skills = () => {
           </h3>
           <div className="bg-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-xl p-8">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {[
+              {["Cloud Computing",
                 "Object-Oriented Programming",
                 "Data Structures & Algorithms", 
                 "Computer Networks",
